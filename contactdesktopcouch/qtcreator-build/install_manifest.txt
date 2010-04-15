@@ -1,0 +1,2 @@
+/usr/local/share/akonadi/agents/contactdesktopcouchresource.desktop
+/usr/local/bin/akonadi_contactdesktopcouch_resource
