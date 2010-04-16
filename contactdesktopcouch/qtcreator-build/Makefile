@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch
+CMAKE_SOURCE_DIR = /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build
+CMAKE_BINARY_DIR = /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -123,9 +123,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/progress.make
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/progress.make
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -222,6 +222,21 @@ contactdesktopcouchresource.s:
 .PHONY : contactdesktopcouchresource.s
 
 # target to build an object file
+mapper.o:
+	$(MAKE) -f CMakeFiles/akonadi_contactdesktopcouch_resource.dir/build.make CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o
+.PHONY : mapper.o
+
+# target to preprocess a source file
+mapper.i:
+	$(MAKE) -f CMakeFiles/akonadi_contactdesktopcouch_resource.dir/build.make CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.i
+.PHONY : mapper.i
+
+# target to generate assembly for a file
+mapper.s:
+	$(MAKE) -f CMakeFiles/akonadi_contactdesktopcouch_resource.dir/build.make CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.s
+.PHONY : mapper.s
+
+# target to build an object file
 settings.o:
 	$(MAKE) -f CMakeFiles/akonadi_contactdesktopcouch_resource.dir/build.make CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o
 .PHONY : settings.o
@@ -273,6 +288,9 @@ help:
 	@echo "... contactdesktopcouchresource.o"
 	@echo "... contactdesktopcouchresource.i"
 	@echo "... contactdesktopcouchresource.s"
+	@echo "... mapper.o"
+	@echo "... mapper.i"
+	@echo "... mapper.s"
 	@echo "... settings.o"
 	@echo "... settings.i"
 	@echo "... settings.s"

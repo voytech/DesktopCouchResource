@@ -7,7 +7,7 @@
 #include <kabc/addressee.h>
 #include <couchdb-qt.h>
 #include <desktop_couch.h>
-
+#include "mapper.h"
 class ContactDesktopCouchResource : public Akonadi::ResourceBase,
                            public Akonadi::AgentBase::Observer
 {
@@ -39,9 +39,10 @@ class ContactDesktopCouchResource : public Akonadi::ResourceBase,
 //   void slotDocumentRetrieved( const QVariant& v );
 
   private:
+    void initDataBase(void);
     DesktopCouchProvider  m_dcp;
     Akonadi::Collection m_root;
-    const QString dbName;
+    QString dbName;
 };
 
 #endif

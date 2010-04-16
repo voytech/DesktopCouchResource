@@ -14,7 +14,7 @@
  </data>
  <data>
   <variable>RunConfiguration0-CMakeRunConfiguration.Target</variable>
-  <value type="QString">/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource</value>
+  <value type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource</value>
  </data>
  <data>
   <variable>RunConfiguration0-CMakeRunConfiguration.UseTerminal</variable>
@@ -30,7 +30,7 @@
  </data>
  <data>
   <variable>RunConfiguration0-CMakeRunConfiguration.WorkingDirectory</variable>
-  <value type="QString">/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build</value>
+  <value type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build</value>
  </data>
  <data>
   <variable>RunConfiguration0-RunConfiguration.name</variable>
@@ -52,7 +52,7 @@
   <variable>buildConfiguration-all</variable>
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">all</value>
-   <value key="buildDirectory" type="QString">/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build</value>
+   <value key="buildDirectory" type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build</value>
    <value key="msvcVersion" type="QString"></value>
   </valuemap>
  </data>
@@ -60,12 +60,88 @@
   <variable>buildconfiguration-all-buildstep0</variable>
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">all</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-6NXIUXaRNv,guid=2006deb63cd1645b17392feb4bc6d785</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">GS_LIB=/home/voytech/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/voytech/.gtkrc-2.0:/home/voytech/.gtkrc-2.0-kde4:/home/voytech/.kde/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/voytech/.gtkrc::/home/voytech/.kde/share/config/gtkrc</value>
+    <value type="QString">HOME=/home/voytech</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=1000</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=pl_PL.UTF-8</value>
+    <value type="QString">LANGUAGE=</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=voytech</value>
+    <value type="QString">PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/voytech/Dokumenty</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/voytech/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">SESSION_MANAGER=local/voytech:@/tmp/.ICE-unix/1723,unix/voytech:/tmp/.ICE-unix/1723</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=0</value>
+    <value type="QString">SSH_AGENT_PID=1632</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-qMJTrw1596/agent.1596</value>
+    <value type="QString">USER=voytech</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XCURSOR_THEME=oxy-white</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=b42310b247ad642c02c05f374bc05d36-1271322500.308757-347016429</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList"/>
+   <value key="abstractProcess.command" type="QString">make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build</value>
   </valuemap>
  </data>
  <data>
   <variable>buildconfiguration-all-cleanstep0</variable>
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">all</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-6NXIUXaRNv,guid=2006deb63cd1645b17392feb4bc6d785</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">GS_LIB=/home/voytech/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/voytech/.gtkrc-2.0:/home/voytech/.gtkrc-2.0-kde4:/home/voytech/.kde/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/voytech/.gtkrc::/home/voytech/.kde/share/config/gtkrc</value>
+    <value type="QString">HOME=/home/voytech</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=1000</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=pl_PL.UTF-8</value>
+    <value type="QString">LANGUAGE=</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=voytech</value>
+    <value type="QString">PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/voytech/Dokumenty</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/voytech/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">SESSION_MANAGER=local/voytech:@/tmp/.ICE-unix/1723,unix/voytech:/tmp/.ICE-unix/1723</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=0</value>
+    <value type="QString">SSH_AGENT_PID=1632</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-qMJTrw1596/agent.1596</value>
+    <value type="QString">USER=voytech</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XCURSOR_THEME=oxy-white</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=b42310b247ad642c02c05f374bc05d36-1271322500.308757-347016429</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">true</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build</value>
    <valuelist key="additionalArguments" type="QVariantList">
     <value type="QString">clean</value>
    </valuelist>

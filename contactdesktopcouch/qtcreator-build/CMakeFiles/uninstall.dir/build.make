@@ -38,15 +38,15 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch
+CMAKE_SOURCE_DIR = /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build
+CMAKE_BINARY_DIR = /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build
 
 # Utility rule file for uninstall.
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/cmake_uninstall.cmake
+	/usr/bin/cmake -P /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -61,6 +61,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

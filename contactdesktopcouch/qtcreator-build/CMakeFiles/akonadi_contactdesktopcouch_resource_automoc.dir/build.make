@@ -38,15 +38,15 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch
+CMAKE_SOURCE_DIR = /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build
+CMAKE_BINARY_DIR = /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build
 
 # Utility rule file for akonadi_contactdesktopcouch_resource_automoc.
 
 CMakeFiles/akonadi_contactdesktopcouch_resource_automoc:
-	/usr/bin/automoc4 /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build /usr/bin/moc-qt4 /usr/bin/cmake
+	/usr/bin/automoc4 /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build /usr/bin/moc-qt4 /usr/bin/cmake
 
 akonadi_contactdesktopcouch_resource_automoc: CMakeFiles/akonadi_contactdesktopcouch_resource_automoc
 akonadi_contactdesktopcouch_resource_automoc: CMakeFiles/akonadi_contactdesktopcouch_resource_automoc.dir/build.make
@@ -61,6 +61,6 @@ CMakeFiles/akonadi_contactdesktopcouch_resource_automoc.dir/clean:
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource_automoc.dir/clean
 
 CMakeFiles/akonadi_contactdesktopcouch_resource_automoc.dir/depend:
-	cd /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/akonadi_contactdesktopcouch_resource_automoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/akonadi_contactdesktopcouch_resource_automoc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource_automoc.dir/depend
 

@@ -1,8 +1,8 @@
-IF(NOT EXISTS "/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/install_manifest.txt")
+IF(NOT EXISTS "/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/install_manifest.txt")
 
-FILE(READ "/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/install_manifest.txt" files)
+FILE(READ "/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"${file}\"")

@@ -1,5 +1,5 @@
 SOURCES:
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.cpp
 MOC_COMPILE_DEFINITIONS:
 _BSD_SOURCE
 MOC_DEFINITIONS:
@@ -9,6 +9,6 @@ MOC_INCLUDES:
 CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE:
 ON
 CMAKE_BINARY_DIR:
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build
 CMAKE_SOURCE_DIR:
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch

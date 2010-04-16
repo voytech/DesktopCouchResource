@@ -1,4 +1,4 @@
-# Install script for directory: /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch
+# Install script for directory: /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +33,7 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "/usr/local/share/akonadi/agents" TYPE FILE FILES "/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.desktop")
+  FILE(INSTALL DESTINATION "/usr/local/share/akonadi/agents" TYPE FILE FILES "/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.desktop")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -42,7 +42,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}/usr/local/bin/akonadi_contactdesktopcouch_resource"
          RPATH "/usr/local/lib")
   ENDIF(EXISTS "$ENV{DESTDIR}/usr/local/bin/akonadi_contactdesktopcouch_resource")
-  FILE(INSTALL DESTINATION "/usr/local/bin" TYPE EXECUTABLE FILES "/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource")
+  FILE(INSTALL DESTINATION "/usr/local/bin" TYPE EXECUTABLE FILES "/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource")
   IF(EXISTS "$ENV{DESTDIR}/usr/local/bin/akonadi_contactdesktopcouch_resource")
     FILE(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/usr/local/bin/akonadi_contactdesktopcouch_resource"
@@ -60,7 +60,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

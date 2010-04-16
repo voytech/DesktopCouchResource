@@ -38,10 +38,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch
+CMAKE_SOURCE_DIR = /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build
+CMAKE_BINARY_DIR = /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/akonadi_contactdesktopcouch_resource.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/akonadi_contactdesktopcouch_resource.dir/flags.make
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/flags.make
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o: akonadi_contactdesktopcouch_resource_automoc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@echo "Building CXX object CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o -c /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o -c /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.i: cmake_force
 	@echo "Preprocessing CXX source to CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.i
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.s: cmake_force
 	@echo "Compiling CXX source to assembly CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.s
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o.requires:
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o.requires
@@ -78,17 +78,17 @@ CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/flags.make
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o: ../contactdesktopcouchresource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@echo "Building CXX object CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o -c /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o -c /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.i: cmake_force
 	@echo "Preprocessing CXX source to CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.i
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.s: cmake_force
 	@echo "Compiling CXX source to assembly CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.s
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o.requires:
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o.requires
@@ -100,19 +100,43 @@ CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o.provides.build: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o.provides.build
 
+CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/flags.make
+CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o: ../mapper.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@echo "Building CXX object CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o -c /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.cpp
+
+CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.i: cmake_force
+	@echo "Preprocessing CXX source to CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.i
+
+CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.s: cmake_force
+	@echo "Compiling CXX source to assembly CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.s
+
+CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.requires:
+.PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.requires
+
+CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.provides: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.requires
+	$(MAKE) -f CMakeFiles/akonadi_contactdesktopcouch_resource.dir/build.make CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.provides.build
+.PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.provides
+
+CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.provides.build: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o
+.PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.provides.build
+
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/flags.make
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o: settings.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@echo "Building CXX object CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o -c /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o -c /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.i: cmake_force
 	@echo "Preprocessing CXX source to CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.i
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.s: cmake_force
 	@echo "Compiling CXX source to assembly CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.s
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o.requires:
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o.requires
@@ -127,17 +151,17 @@ CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o.provides.build: C
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/flags.make
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o: settingsadaptor.cpp
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o: settingsadaptor.moc
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@echo "Building CXX object CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o -c /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o -c /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.i: cmake_force
 	@echo "Preprocessing CXX source to CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp > CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.i
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.s: cmake_force
 	@echo "Compiling CXX source to assembly CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp -o CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.s
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o.requires:
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o.requires
@@ -151,34 +175,35 @@ CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o.provides.b
 
 settings.h: ../contactdesktopcouchresource.kcfg
 settings.h: ../settings.kcfgc
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@echo "Generating settings.h, settings.cpp"
-	/usr/bin/kconfig_compiler /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.kcfg /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/settings.kcfgc -d /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/
+	/usr/bin/kconfig_compiler /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.kcfg /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/settings.kcfgc -d /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/
 
 settings.cpp: settings.h
 
 settingsadaptor.cpp: org.kde.Akonadi.ContactDesktopCouch.Settings.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@echo "Generating settingsadaptor.cpp, settingsadaptor.h"
-	/usr/bin/qdbusxml2cpp -m -a settingsadaptor -i settings.h -l Settings /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/org.kde.Akonadi.ContactDesktopCouch.Settings.xml
+	/usr/bin/qdbusxml2cpp -m -a settingsadaptor -i settings.h -l Settings /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/org.kde.Akonadi.ContactDesktopCouch.Settings.xml
 
 settingsadaptor.h: settingsadaptor.cpp
 
 settingsadaptor.moc: settingsadaptor.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@echo "Generating settingsadaptor.moc"
-	/usr/bin/moc-qt4 -I/usr/include/qt4/QtDBus -I/usr/include -I/usr/include/KDE -I/usr/include/qt4/KDE -I/usr/include/qt4 -I/usr/include/qt4/phonon -I/usr/include/qt4/QtXmlPatterns -I/usr/include/qt4/QtXml -I/usr/include/qt4/QtWebKit -I/usr/include/qt4/QtUiTools -I/usr/include/qt4/QtTest -I/usr/include/qt4/QtSvg -I/usr/include/qt4/QtSql -I/usr/include/qt4/QtScriptTools -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtOpenGL -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtMultimedia -I/usr/include/qt4/QtHelp -I/usr/include/qt4/QtDesigner -I/usr/include/qt4/QtAssistant -I/usr/include/qt4/Qt3Support -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -I/usr/include/qt4/Qt -I/usr/share/qt4/mkspecs/default -I/usr/include/couchdb-qt -I/usr/include/desktop-couch-qt -I/usr/include/QtCrypto -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -D_BSD_SOURCE -o /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.moc /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
+	/usr/bin/moc-qt4 -I/usr/include/qt4/QtDBus -I/usr/include -I/usr/include/KDE -I/usr/include/qt4/KDE -I/usr/include/qt4 -I/usr/include/qt4/phonon -I/usr/include/qt4/QtXmlPatterns -I/usr/include/qt4/QtXml -I/usr/include/qt4/QtWebKit -I/usr/include/qt4/QtUiTools -I/usr/include/qt4/QtTest -I/usr/include/qt4/QtSvg -I/usr/include/qt4/QtSql -I/usr/include/qt4/QtScriptTools -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtOpenGL -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtMultimedia -I/usr/include/qt4/QtHelp -I/usr/include/qt4/QtDesigner -I/usr/include/qt4/QtAssistant -I/usr/include/qt4/Qt3Support -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore -I/usr/include/qt4/Qt -I/usr/share/qt4/mkspecs/default -I/usr/include/couchdb-qt -I/usr/include/desktop-couch-qt -I/usr/include/QtCrypto -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -D_BSD_SOURCE -o /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.moc /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
 
 org.kde.Akonadi.ContactDesktopCouch.Settings.xml: /usr/share/kde4/apps/akonadi-kde/kcfg2dbus.xsl
 org.kde.Akonadi.ContactDesktopCouch.Settings.xml: ../contactdesktopcouchresource.kcfg
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@echo "Generating org.kde.Akonadi.ContactDesktopCouch.Settings.xml"
-	/usr/bin/xsltproc --stringparam interfaceName org.kde.Akonadi.ContactDesktopCouch.Settings /usr/share/kde4/apps/akonadi-kde/kcfg2dbus.xsl /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.kcfg > /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/org.kde.Akonadi.ContactDesktopCouch.Settings.xml
+	/usr/bin/xsltproc --stringparam interfaceName org.kde.Akonadi.ContactDesktopCouch.Settings /usr/share/kde4/apps/akonadi-kde/kcfg2dbus.xsl /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.kcfg > /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/org.kde.Akonadi.ContactDesktopCouch.Settings.xml
 
 # Object files for target akonadi_contactdesktopcouch_resource
 akonadi_contactdesktopcouch_resource_OBJECTS = \
 "CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o" \
 "CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o" \
+"CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o" \
 "CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o" \
 "CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o"
 
@@ -187,6 +212,7 @@ akonadi_contactdesktopcouch_resource_EXTERNAL_OBJECTS =
 
 akonadi_contactdesktopcouch_resource: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o
 akonadi_contactdesktopcouch_resource: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o
+akonadi_contactdesktopcouch_resource: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o
 akonadi_contactdesktopcouch_resource: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o
 akonadi_contactdesktopcouch_resource: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o
 akonadi_contactdesktopcouch_resource: /usr/lib/libakonadi-kde.so.4.4.0
@@ -208,7 +234,7 @@ akonadi_contactdesktopcouch_resource: CMakeFiles/akonadi_contactdesktopcouch_res
 akonadi_contactdesktopcouch_resource: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/link.txt
 	@echo "Linking CXX executable akonadi_contactdesktopcouch_resource"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/akonadi_contactdesktopcouch_resource.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -D_filename=/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource.shell -D_library_path_variable=LD_LIBRARY_PATH -D_ld_library_path="/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/lib/./:/usr/local/lib:/usr/lib:/usr/lib" -D_executable=/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource -P /usr/share/kde4/apps/cmake/modules/kde4_exec_via_sh.cmake
+	/usr/bin/cmake -D_filename=/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource.shell -D_library_path_variable=LD_LIBRARY_PATH -D_ld_library_path="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/lib/./:/usr/local/lib:/usr/lib:/usr/lib" -D_executable=/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource -P /usr/share/kde4/apps/cmake/modules/kde4_exec_via_sh.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/build: akonadi_contactdesktopcouch_resource
@@ -216,6 +242,7 @@ CMakeFiles/akonadi_contactdesktopcouch_resource.dir/build: akonadi_contactdeskto
 
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/requires: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/akonadi_contactdesktopcouch_resource_automoc.o.requires
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/requires: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/contactdesktopcouchresource.o.requires
+CMakeFiles/akonadi_contactdesktopcouch_resource.dir/requires: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/mapper.o.requires
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/requires: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settings.o.requires
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/requires: CMakeFiles/akonadi_contactdesktopcouch_resource.dir/settingsadaptor.o.requires
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/requires
@@ -230,6 +257,6 @@ CMakeFiles/akonadi_contactdesktopcouch_resource.dir/depend: settingsadaptor.cpp
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/depend: settingsadaptor.h
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/depend: settingsadaptor.moc
 CMakeFiles/akonadi_contactdesktopcouch_resource.dir/depend: org.kde.Akonadi.ContactDesktopCouch.Settings.xml
-	cd /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/akonadi_contactdesktopcouch_resource.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/akonadi_contactdesktopcouch_resource.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/akonadi_contactdesktopcouch_resource.dir/depend
 

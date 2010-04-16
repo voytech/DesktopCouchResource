@@ -20,13 +20,13 @@ couchdb-qt.h
 desktop_couch.h
 -
 
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp
 contactdesktopcouchresource.h
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.h
 settings.h
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/settings.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/settings.h
 settingsadaptor.h
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/settingsadaptor.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/settingsadaptor.h
 akonadi/changerecorder.h
 -
 akonadi/itemfetchscope.h
@@ -45,10 +45,12 @@ QtDBus/QDBusConnection
 -
 QDebug
 -
+kabc/phonenumber.h
+-
 contactdesktopcouchresource.moc
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.moc
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.moc
 
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.h
 akonadi/resourcebase.h
 -
 akonadi/agentbase.h
@@ -62,11 +64,25 @@ couchdb-qt.h
 desktop_couch.h
 -
 
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.cpp
+mapper.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.h
 
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.h
+kabc/addressee.h
+-
+couchdb-qt.h
+-
+desktop_couch.h
+-
+kabc/phonenumber.h
+-
+
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp
+
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp
 settings.h
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
 klocale.h
 -
 kglobal.h
@@ -74,15 +90,15 @@ kglobal.h
 QtCore/QFile
 -
 
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
 kconfigskeleton.h
 -
 kdebug.h
 -
 
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp
 settingsadaptor.h
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
 QtCore/QMetaObject
 -
 QtCore/QByteArray
@@ -98,19 +114,19 @@ QtCore/QStringList
 QtCore/QVariant
 -
 settingsadaptor.moc
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.moc
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.moc
 
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
 QtCore/QObject
 -
 QtDBus/QtDBus
 -
 settings.h
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
 
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.moc
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.moc
 settingsadaptor.h
-/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
 
 /usr/include/KDE/../kwindowsystem.h
 kdeui_export.h
