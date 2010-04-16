@@ -1,0 +1,91 @@
+ 
+#!/bin/bash
+
+#Firstly download qjson source files from its repo.
+
+#
+# We have to check if we have all libraries needed to build project installed on filesystem
+# if not we have to download and install them.
+#
+
+
+echo "**CHECKING PREREQUISITIES AND INSTALLING NEEDED RESOURCES**"
+tmpv=${0%/*}
+echo $tmpv
+cd $tmpv
+#./install-git
+if [ ! -e "/usr/bin/git" ]
+  then
+    sudo apt-get install git-core
+    echo "**GIT INSTALLED**"
+fi
+# - INSTALLING KDEPIM
+echo "**INSTALLING KDEPIM**"
+sudo apt-get install kdepimlibs5
+sudo apt-get install kdepimlibs5-dev
+sudo apt-get install kdepimlibs-data
+sudo apt-get install kdepim
+sudo apt-get install kdepim-dev
+sudo apt-get install libkdepim4
+#./install-qjson - INSTALLING QJSON LIBRARIES
+echo "**INSTALLING QJSON**"
+REPLY="y"
+if [ -e "/usr/lib/libqjson.so" ]
+then
+  echo "Do You want to reinstall library (y\n)"
+  read ret
+  REPLY=$ret
+fi        
+if [ $REPLY = "y" ]
+then
+  if [ ! -e "QJSON_SOURCES" ]
+    then
+      echo "**CREATING TEMPORARY DIRECTORY**"  
+      mkdir QJSON_SOURCES
+    fi
+      cd QJSON_SOURCES
+      echo "**DOWNLOADING QJSON**"
+      git clone -v git://gitorious.org/qjson/qjson.git 
+      echo "**QJSON DOWNLOADED**"
+      #Then build it and install to file system.
+      echo "**BUILDING QJSON**"
+        cd qjson
+        mkdir build
+        cd build
+        cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=RELEASE ../
+        make
+        sudo make install
+    echo "**QJSON BUILT SUCCESSFULLY**"
+    echo "**RETURNING TO $tmpv**"
+    cd ..
+fi
+echo "**INSTALLING QOAUTH**"
+#if [ ! -e "/usr/lib/libqoauth.so" ]
+REPLY="y"
+if [ -e "/usr/lib/libqoauth.so" ]
+then
+  echo "Do You want to reinstall library (y\n)"
+  read ret
+  REPLY=$ret
+fi        
+if [ $REPLY = "y" ]
+then
+  if [ ! -e "QOAUTH_SOURCES" ]
+  then 
+    mkdir QOAUTH_SOURCES
+  fi
+    cd QOAUTH_SOURCES 
+    echo "**NO SOURCES FOUND. TRYING TO DOWNLOAD**"
+    git clone -v git://github.com/ayoy/qoauth.git
+    echo "**QOAUTH DOWNLOADED**" 
+    #Then build it and install to file system.
+    echo "**BUILDING QOAUTH**"
+      #sudo apt-get install  libqca2-dev
+      cd qoauth
+      qmake 
+      make  
+      sudo make install
+    echo "**QOAUTH BUILT SUCCESSFULLY**" 
+fi
+echo "**FINISHED..**"
+  

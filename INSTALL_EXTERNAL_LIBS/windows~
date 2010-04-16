@@ -1,0 +1,104 @@
+#!/bin/bash
+# Author: Wojciech Mąka
+# 
+#
+#
+installation () {
+    if [ $1 -eq 0 ]
+    then
+      if [ ! -e "/usr/bin/git" ]
+      then
+        sudo apt-get install git-core
+      fi
+      prog=2 
+      return $prog
+    fi
+    if [ $1 -eq 1 ]
+    then
+      sudo apt-get install kdepimlibs5
+      sudo apt-get install kdepimlibs5-dev
+      sudo apt-get install kdepimlibs-data
+      sudo apt-get install kdepim
+      sudo apt-get install kdepim-dev
+      sudo apt-get install libkdepim4
+      prog=4
+      return $prog
+    fi
+    if [ $1 -eq 2 ]
+    then
+      REPLY="y"
+     # if [ -e "/usr/lib/libqjson.so" ]
+     # then
+     #    dialog --title "Reinstallation" \
+     #           --backtitle "Reinstallation" \
+     #           --yesno "Do You want to reinstall library ?" 5 30
+     # fi        
+      if [ $REPLY = "y" ]
+      then
+	if [ ! -e "QJSON_SOURCES" ]
+	then
+	  mkdir QJSON_SOURCES
+	fi
+	cd QJSON_SOURCES
+	git clone -v git://gitorious.org/qjson/qjson.git 
+	  cd qjson
+	  mkdir build
+	  cd build
+	  cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=RELEASE ../
+	  make
+	  sudo make install
+	  cd ..
+      fi
+      prog=50
+      return $prog
+    fi
+    if [ $1 -eq 3 ]
+    then 
+      REPLY="y"
+      #if [ -e "/usr/lib/libqoauth.so" ]
+      #then
+
+	#REPLY=$ret
+      #fi        
+      if [ $REPLY = "y" ]
+      then
+	if [ ! -e "QOAUTH_SOURCES" ]
+	then 
+	  mkdir QOAUTH_SOURCES
+	fi
+	cd QOAUTH_SOURCES 
+	git clone -v git://github.com/ayoy/qoauth.git
+	  cd qoauth
+	  qmake 
+	  make  
+	  sudo make install	
+      fi
+      prog=100 
+      return $prog  
+    fi   
+}
+
+
+sudo apt-get install dialog 
+tmpv=${0%/*}
+echo $tmpv
+cd $tmpv
+
+dialog --title "Installing prerequisites..." \
+--backtitle "Installing prerequisites..." \
+--msgbox "This installer will install all dependecies needed for buildig: couchdb-qt, " 10 40
+
+phase=0
+prog=0
+{
+while [ $prog -lt 101 ]
+do
+ installation $phase
+ prog=$?
+ echo $prog
+ phase=$[$phase+1]
+done
+} | dialog --title  "Installing prerequisites..." \
+	   --backtitle "Installing prerequisites..." \
+	   --gauge "Installation in progress... " 10 40 $prog 
+
