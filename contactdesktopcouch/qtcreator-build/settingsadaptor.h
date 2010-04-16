@@ -9,8 +9,8 @@
  * before re-generating it.
  */
 
-#ifndef SETTINGSADAPTOR_H_1271429190
-#define SETTINGSADAPTOR_H_1271429190
+#ifndef SETTINGSADAPTOR_H_1271445908
+#define SETTINGSADAPTOR_H_1271445908
 
 #include <QtCore/QObject>
 #include <QtDBus/QtDBus>

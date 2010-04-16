@@ -2,253 +2,256 @@
 <qtcreator>
  <data>
   <variable>RunConfiguration0-Arguments</variable>
-  <valuelist type="QVariantList" />
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration0-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
  </data>
  <data>
   <variable>RunConfiguration0-Executable</variable>
-  <value type="QString" ></value>
+  <value type="QString"></value>
  </data>
  <data>
   <variable>RunConfiguration0-RunConfiguration.name</variable>
-  <value type="QString" >Własny program</value>
+  <value type="QString">Własny program</value>
  </data>
  <data>
   <variable>RunConfiguration0-UseTerminal</variable>
-  <value type="bool" >false</value>
+  <value type="bool">false</value>
  </data>
  <data>
   <variable>RunConfiguration0-UserEnvironmentChanges</variable>
-  <valuelist type="QVariantList" />
+  <valuelist type="QVariantList">
+   <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/libs</value>
+  </valuelist>
  </data>
  <data>
   <variable>RunConfiguration0-UserName</variable>
-  <value type="QString" ></value>
+  <value type="QString"></value>
  </data>
  <data>
   <variable>RunConfiguration0-UserSetName</variable>
-  <value type="bool" >false</value>
+  <value type="bool">false</value>
  </data>
  <data>
   <variable>RunConfiguration0-WorkingDirectory</variable>
-  <value type="QString" >$BUILDDIR</value>
+  <value type="QString">$BUILDDIR</value>
  </data>
  <data>
   <variable>RunConfiguration0-type</variable>
-  <value type="QString" >ProjectExplorer.CustomExecutableRunConfiguration</value>
+  <value type="QString">ProjectExplorer.CustomExecutableRunConfiguration</value>
  </data>
  <data>
   <variable>activeRunConfiguration</variable>
-  <value type="int" >0</value>
+  <value type="int">0</value>
  </data>
  <data>
   <variable>activebuildconfiguration</variable>
-  <value type="QString" >Debug</value>
+  <value type="QString">Debug</value>
  </data>
  <data>
   <variable>buildConfiguration-Debug</variable>
-  <valuemap type="QVariantMap" >
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
-   <value key="QtVersionId" type="int" >3</value>
-   <value key="ToolChain" type="int" >0</value>
-   <value key="addQDumper" type="" ></value>
-   <value key="buildConfiguration" type="int" >2</value>
-   <value key="buildDirectory" type="QString" >/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/couchdb-qt</value>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <value key="QtVersionId" type="int">3</value>
+   <value key="ToolChain" type="int">0</value>
+   <value key="addQDumper" type=""></value>
+   <value key="buildConfiguration" type="int">0</value>
+   <value key="buildDirectory" type="QString">/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/couchdb-qt</value>
   </valuemap>
  </data>
  <data>
   <variable>buildconfiguration-Debug-buildstep0</variable>
-  <valuemap type="QVariantMap" >
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
-   <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-omA3cn2ip5,guid=665aa290a72e4169c855365d4bc61903</value>
-    <value type="QString" >DESKTOP_SESSION=default</value>
-    <value type="QString" >DESKTOP_STARTUP_ID=</value>
-    <value type="QString" >DISPLAY=:0.0</value>
-    <value type="QString" >DM_CONTROL=/var/run/xdmctl</value>
-    <value type="QString" >GS_LIB=/home/voytech/.fonts</value>
-    <value type="QString" >GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/voytech/.gtkrc-2.0:/home/voytech/.gtkrc-2.0-kde4:/home/voytech/.kde/share/config/gtkrc-2.0</value>
-    <value type="QString" >GTK_RC_FILES=/etc/gtk/gtkrc:/home/voytech/.gtkrc::/home/voytech/.kde/share/config/gtkrc</value>
-    <value type="QString" >HOME=/home/voytech</value>
-    <value type="QString" >KDE_FULL_SESSION=true</value>
-    <value type="QString" >KDE_MULTIHEAD=false</value>
-    <value type="QString" >KDE_SESSION_UID=1000</value>
-    <value type="QString" >KDE_SESSION_VERSION=4</value>
-    <value type="QString" >LANG=pl_PL.UTF-8</value>
-    <value type="QString" >LANGUAGE=</value>
-    <value type="QString" >LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
-    <value type="QString" >LOGNAME=voytech</value>
-    <value type="QString" >PATH=/usr/local/Trolltech/Qt-4.6.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
-    <value type="QString" >PWD=/home/voytech/Dokumenty</value>
-    <value type="QString" >QTDIR=/usr/local/Trolltech/Qt-4.6.2</value>
-    <value type="QString" >QT_PLUGIN_PATH=/home/voytech/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
-    <value type="QString" >SESSION_MANAGER=local/voytech:@/tmp/.ICE-unix/1612,unix/voytech:/tmp/.ICE-unix/1612</value>
-    <value type="QString" >SHELL=/bin/bash</value>
-    <value type="QString" >SHLVL=0</value>
-    <value type="QString" >SSH_AGENT_PID=1522</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/ssh-cDxszR1481/agent.1481</value>
-    <value type="QString" >USER=voytech</value>
-    <value type="QString" >WINDOWPATH=7</value>
-    <value type="QString" >XCURSOR_THEME=oxy-white</value>
-    <value type="QString" >XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
-    <value type="QString" >XDG_SESSION_COOKIE=b42310b247ad642c02c05f374bc05d36-1271273730.414939-1509905660</value>
-    <value type="QString" >XDM_MANAGED=method=classic</value>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Elwt2XMOnf,guid=ecf6700042bb924f50f6f8574bc80040</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-EEqS4Z/S.gpg-agent:1616:1</value>
+    <value type="QString">GS_LIB=/home/voytech/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/voytech/.gtkrc-2.0:/home/voytech/.gtkrc-2.0-kde4:/home/voytech/.kde/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/voytech/.gtkrc::/home/voytech/.kde/share/config/gtkrc</value>
+    <value type="QString">HOME=/home/voytech</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=1000</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=pl_PL.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=voytech</value>
+    <value type="QString">PATH=/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/voytech/Dokumenty</value>
+    <value type="QString">QTDIR=/usr/share/qt4</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/voytech/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">SESSION_MANAGER=local/voytech:@/tmp/.ICE-unix/1707,unix/voytech:/tmp/.ICE-unix/1707</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=0</value>
+    <value type="QString">SSH_AGENT_PID=1615</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-GCxIdN1578/agent.1578</value>
+    <value type="QString">USER=voytech</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XCURSOR_THEME=oxy-white</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=b42310b247ad642c02c05f374bc05d36-1271398464.629298-326830318</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
    </valuelist>
-   <valuelist key="abstractProcess.arguments" type="QVariantList" >
-    <value type="QString" >/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/couchdb-qt/couchdb-qt.pro</value>
-    <value type="QString" >-spec</value>
-    <value type="QString" >linux-g++</value>
-    <value type="QString" >-r</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/couchdb-qt/couchdb-qt.pro</value>
+    <value type="QString">-spec</value>
+    <value type="QString">linux-g++</value>
+    <value type="QString">-r</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString" >/usr/local/Trolltech/Qt-4.6.2/bin/qmake</value>
-   <value key="abstractProcess.enabled" type="bool" >false</value>
-   <value key="abstractProcess.workingDirectory" type="QString" >/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/couchdb-qt</value>
-   <value key="buildConfiguration" type="int" >0</value>
+   <value key="abstractProcess.command" type="QString">/usr/bin/qmake-qt4</value>
+   <value key="abstractProcess.enabled" type="bool">false</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/couchdb-qt</value>
+   <value key="buildConfiguration" type=""></value>
   </valuemap>
  </data>
  <data>
   <variable>buildconfiguration-Debug-buildstep1</variable>
-  <valuemap type="QVariantMap" >
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
-   <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-omA3cn2ip5,guid=665aa290a72e4169c855365d4bc61903</value>
-    <value type="QString" >DESKTOP_SESSION=default</value>
-    <value type="QString" >DESKTOP_STARTUP_ID=</value>
-    <value type="QString" >DISPLAY=:0.0</value>
-    <value type="QString" >DM_CONTROL=/var/run/xdmctl</value>
-    <value type="QString" >GS_LIB=/home/voytech/.fonts</value>
-    <value type="QString" >GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/voytech/.gtkrc-2.0:/home/voytech/.gtkrc-2.0-kde4:/home/voytech/.kde/share/config/gtkrc-2.0</value>
-    <value type="QString" >GTK_RC_FILES=/etc/gtk/gtkrc:/home/voytech/.gtkrc::/home/voytech/.kde/share/config/gtkrc</value>
-    <value type="QString" >HOME=/home/voytech</value>
-    <value type="QString" >KDE_FULL_SESSION=true</value>
-    <value type="QString" >KDE_MULTIHEAD=false</value>
-    <value type="QString" >KDE_SESSION_UID=1000</value>
-    <value type="QString" >KDE_SESSION_VERSION=4</value>
-    <value type="QString" >LANG=pl_PL.UTF-8</value>
-    <value type="QString" >LANGUAGE=</value>
-    <value type="QString" >LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
-    <value type="QString" >LOGNAME=voytech</value>
-    <value type="QString" >PATH=/usr/local/Trolltech/Qt-4.6.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
-    <value type="QString" >PWD=/home/voytech/Dokumenty</value>
-    <value type="QString" >QTDIR=/usr/local/Trolltech/Qt-4.6.2</value>
-    <value type="QString" >QT_PLUGIN_PATH=/home/voytech/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
-    <value type="QString" >SESSION_MANAGER=local/voytech:@/tmp/.ICE-unix/1612,unix/voytech:/tmp/.ICE-unix/1612</value>
-    <value type="QString" >SHELL=/bin/bash</value>
-    <value type="QString" >SHLVL=0</value>
-    <value type="QString" >SSH_AGENT_PID=1522</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/ssh-cDxszR1481/agent.1481</value>
-    <value type="QString" >USER=voytech</value>
-    <value type="QString" >WINDOWPATH=7</value>
-    <value type="QString" >XCURSOR_THEME=oxy-white</value>
-    <value type="QString" >XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
-    <value type="QString" >XDG_SESSION_COOKIE=b42310b247ad642c02c05f374bc05d36-1271273730.414939-1509905660</value>
-    <value type="QString" >XDM_MANAGED=method=classic</value>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Elwt2XMOnf,guid=ecf6700042bb924f50f6f8574bc80040</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-EEqS4Z/S.gpg-agent:1616:1</value>
+    <value type="QString">GS_LIB=/home/voytech/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/voytech/.gtkrc-2.0:/home/voytech/.gtkrc-2.0-kde4:/home/voytech/.kde/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/voytech/.gtkrc::/home/voytech/.kde/share/config/gtkrc</value>
+    <value type="QString">HOME=/home/voytech</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=1000</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=pl_PL.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=voytech</value>
+    <value type="QString">PATH=/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/voytech/Dokumenty</value>
+    <value type="QString">QTDIR=/usr/share/qt4</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/voytech/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">SESSION_MANAGER=local/voytech:@/tmp/.ICE-unix/1707,unix/voytech:/tmp/.ICE-unix/1707</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=0</value>
+    <value type="QString">SSH_AGENT_PID=1615</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-GCxIdN1578/agent.1578</value>
+    <value type="QString">USER=voytech</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XCURSOR_THEME=oxy-white</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=b42310b247ad642c02c05f374bc05d36-1271398464.629298-326830318</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
    </valuelist>
-   <value key="abstractProcess.IgnoreReturnValue" type="bool" >false</value>
-   <valuelist key="abstractProcess.arguments" type="QVariantList" >
-    <value type="QString" >-w</value>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">-w</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString" >/usr/bin/make</value>
-   <value key="abstractProcess.enabled" type="bool" >true</value>
-   <value key="abstractProcess.workingDirectory" type="QString" >/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/couchdb-qt</value>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/couchdb-qt</value>
   </valuemap>
  </data>
  <data>
   <variable>buildconfiguration-Debug-cleanstep0</variable>
-  <valuemap type="QVariantMap" >
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
-   <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-omA3cn2ip5,guid=665aa290a72e4169c855365d4bc61903</value>
-    <value type="QString" >DESKTOP_SESSION=default</value>
-    <value type="QString" >DESKTOP_STARTUP_ID=</value>
-    <value type="QString" >DISPLAY=:0.0</value>
-    <value type="QString" >DM_CONTROL=/var/run/xdmctl</value>
-    <value type="QString" >GS_LIB=/home/voytech/.fonts</value>
-    <value type="QString" >GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/voytech/.gtkrc-2.0:/home/voytech/.gtkrc-2.0-kde4:/home/voytech/.kde/share/config/gtkrc-2.0</value>
-    <value type="QString" >GTK_RC_FILES=/etc/gtk/gtkrc:/home/voytech/.gtkrc::/home/voytech/.kde/share/config/gtkrc</value>
-    <value type="QString" >HOME=/home/voytech</value>
-    <value type="QString" >KDE_FULL_SESSION=true</value>
-    <value type="QString" >KDE_MULTIHEAD=false</value>
-    <value type="QString" >KDE_SESSION_UID=1000</value>
-    <value type="QString" >KDE_SESSION_VERSION=4</value>
-    <value type="QString" >LANG=pl_PL.UTF-8</value>
-    <value type="QString" >LANGUAGE=</value>
-    <value type="QString" >LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
-    <value type="QString" >LOGNAME=voytech</value>
-    <value type="QString" >PATH=/usr/local/Trolltech/Qt-4.6.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
-    <value type="QString" >PWD=/home/voytech/Dokumenty</value>
-    <value type="QString" >QTDIR=/usr/local/Trolltech/Qt-4.6.2</value>
-    <value type="QString" >QT_PLUGIN_PATH=/home/voytech/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
-    <value type="QString" >SESSION_MANAGER=local/voytech:@/tmp/.ICE-unix/1612,unix/voytech:/tmp/.ICE-unix/1612</value>
-    <value type="QString" >SHELL=/bin/bash</value>
-    <value type="QString" >SHLVL=0</value>
-    <value type="QString" >SSH_AGENT_PID=1522</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/ssh-cDxszR1481/agent.1481</value>
-    <value type="QString" >USER=voytech</value>
-    <value type="QString" >WINDOWPATH=7</value>
-    <value type="QString" >XCURSOR_THEME=oxy-white</value>
-    <value type="QString" >XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
-    <value type="QString" >XDG_SESSION_COOKIE=b42310b247ad642c02c05f374bc05d36-1271273730.414939-1509905660</value>
-    <value type="QString" >XDM_MANAGED=method=classic</value>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Elwt2XMOnf,guid=ecf6700042bb924f50f6f8574bc80040</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-EEqS4Z/S.gpg-agent:1616:1</value>
+    <value type="QString">GS_LIB=/home/voytech/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/voytech/.gtkrc-2.0:/home/voytech/.gtkrc-2.0-kde4:/home/voytech/.kde/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/voytech/.gtkrc::/home/voytech/.kde/share/config/gtkrc</value>
+    <value type="QString">HOME=/home/voytech</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=1000</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=pl_PL.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/usr/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=voytech</value>
+    <value type="QString">PATH=/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/voytech/Dokumenty</value>
+    <value type="QString">QTDIR=/usr/share/qt4</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/voytech/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">SESSION_MANAGER=local/voytech:@/tmp/.ICE-unix/1707,unix/voytech:/tmp/.ICE-unix/1707</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=0</value>
+    <value type="QString">SSH_AGENT_PID=1615</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-GCxIdN1578/agent.1578</value>
+    <value type="QString">USER=voytech</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XCURSOR_THEME=oxy-white</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=b42310b247ad642c02c05f374bc05d36-1271398464.629298-326830318</value>
+    <value type="QString">XDM_MANAGED=method=classic</value>
    </valuelist>
-   <value key="abstractProcess.IgnoreReturnValue" type="bool" >true</value>
-   <valuelist key="abstractProcess.arguments" type="QVariantList" >
-    <value type="QString" >clean</value>
-    <value type="QString" >-w</value>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">true</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">clean</value>
+    <value type="QString">-w</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString" >/usr/bin/make</value>
-   <value key="abstractProcess.enabled" type="bool" >true</value>
-   <value key="abstractProcess.workingDirectory" type="QString" >/media/storage/PROGRAMMING/MasterThesis/DesktopCouchResource/couchdb-qt</value>
-   <value key="cleanConfig" type="bool" >true</value>
-   <valuelist key="makeargs" type="QVariantList" >
-    <value type="QString" >clean</value>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/couchdb-qt</value>
+   <value key="cleanConfig" type="bool">true</value>
+   <valuelist key="makeargs" type="QVariantList">
+    <value type="QString">clean</value>
    </valuelist>
   </valuemap>
  </data>
  <data>
   <variable>buildconfigurations</variable>
-  <valuelist type="QVariantList" >
-   <value type="QString" >Debug</value>
+  <valuelist type="QVariantList">
+   <value type="QString">Debug</value>
   </valuelist>
  </data>
  <data>
   <variable>buildstep0</variable>
-  <valuemap type="QVariantMap" >
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" ></value>
-   <value key="mkspec" type="QString" ></value>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+   <value key="mkspec" type="QString"></value>
   </valuemap>
  </data>
  <data>
   <variable>buildstep1</variable>
-  <valuemap type="QVariantMap" >
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" ></value>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
   </valuemap>
  </data>
  <data>
   <variable>buildsteps</variable>
-  <valuelist type="QVariantList" >
-   <value type="QString" >trolltech.qt4projectmanager.qmake</value>
-   <value type="QString" >trolltech.qt4projectmanager.make</value>
+  <valuelist type="QVariantList">
+   <value type="QString">trolltech.qt4projectmanager.qmake</value>
+   <value type="QString">trolltech.qt4projectmanager.make</value>
   </valuelist>
  </data>
  <data>
   <variable>cleanstep0</variable>
-  <valuemap type="QVariantMap" >
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" ></value>
-   <value key="clean" type="bool" >true</value>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+   <value key="clean" type="bool">true</value>
   </valuemap>
  </data>
  <data>
   <variable>cleansteps</variable>
-  <valuelist type="QVariantList" >
-   <value type="QString" >trolltech.qt4projectmanager.make</value>
+  <valuelist type="QVariantList">
+   <value type="QString">trolltech.qt4projectmanager.make</value>
   </valuelist>
  </data>
  <data>
   <variable>defaultFileEncoding</variable>
-  <value type="QByteArray" >System</value>
+  <value type="QByteArray">System</value>
  </data>
  <data>
   <variable>project</variable>
-  <valuemap type="QVariantMap" />
+  <valuemap type="QVariantMap"/>
  </data>
 </qtcreator>

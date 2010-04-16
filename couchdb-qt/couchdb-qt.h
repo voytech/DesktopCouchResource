@@ -85,7 +85,6 @@ signals:
     void documentRemoved(bool ok, const QString& error = QString());
     void changeNotification( const QString& db, const QVariant& change );
 private slots:
-    void init();
     void slotDatabaseListingFinished();
     void slotDocumentListingFinished();
     void slotDocumentRetrievalFinished();
@@ -95,13 +94,13 @@ private slots:
     void slotDatabaseDeletionFinished();
     void slotDocumentDeleteProgress( const QVariant&);
     void slotNotificationTriggered( const QString& db );
+    void slotDocumentUpdateProgress( const QVariant& v );
 private:
-    const QString& signHeager(const QString& header);
+    //const QString& signHeager(const QString& header);
      
     class Private;
     Private * const d;
     AuthInfo a_info;
-    CouchDBDocumentInfo lastDoc;
     int port;
     bool a_enabled;
 };

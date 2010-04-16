@@ -12,6 +12,7 @@ TEMPLATE = app
 
 LIBS  += ../libs/libdesktop-couch-qt.so
 LIBS  += ../libs/libcouchdb-qt.so
+
 #LIBS  += /usr/lib/libdesktop-couch-qt.so
 #LIBS  += /usr/lib/libcouchdb-qt.so
 #LIBS +=  /usr/lib/libqjson.so

@@ -51,7 +51,6 @@ public:
   Private()
   {
   }
-
   QString dbname;
   QString docid;
 };
@@ -103,20 +102,21 @@ class CouchDBQt::Private
 {
   public:
     Private()
-    :requestId(-1)
     {
     }
+    QString database;
     QVariant parseJSONString( const QByteArray& json );
     CouchDBDocumentInfoList variantMapToDocInfoList( const QVariant& map );
     QString serializeToJSONString( const QVariant& v);
-    int requestId;
-    QString database;
     QNetworkAccessManager nmanager;
-    int trials;
     Parser parser;
     Serializer serializer;
-    QMap<QString, CouchDBQtChangeNotifier*> notifiers;
+    QMap<QString, CouchDBQtChangeNotifier*> notifiers;   
+    CouchDBDocumentInfo lastDoc;
+    QVariant lastVariant;
 };
+
+
 
 QVariant CouchDBQt::Private::parseJSONString( const QByteArray& json )
 {
@@ -174,10 +174,9 @@ CouchDBQt::CouchDBQt(int port)
     :d( new Private )
 {
   this->port = port;
-  init();
 }
 
-CouchDBQt::~CouchDBQt() { }
+CouchDBQt::~CouchDBQt() { if (d!=NULL) delete d; }
 
 
 void CouchDBQt::enableAuthentication(bool enable)
@@ -190,10 +189,6 @@ void CouchDBQt::setAuthenticationInfo(const AuthInfo& info )
   this->a_info = info;
 }
 
-void CouchDBQt::init()
-{
-  d->trials = 0;
-}
 
 void CouchDBQt::setNotificationsEnabled( const QString& db, bool on )
 {
@@ -316,7 +311,7 @@ void CouchDBQt::getDocument( const CouchDBDocumentInfo & info )
 {  
   if ( info.id().isEmpty() )
     return;
-  this->lastDoc = info;
+  d->lastDoc = info;
   QNetworkRequest req;
   QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(info.database()).arg(info.id()));
   req = this->a_info.createAuthorizedRequest(s,QOAuth::GET);
@@ -332,14 +327,7 @@ void CouchDBQt::slotDocumentRetrievalFinished()
   //qDebug() << doc;
   const QVariant docAsVariant = d->parseJSONString( doc );  
   emit documentRetrieved( docAsVariant );
-/*if (del)
-  {
-      QString revision = (docAsVariant.toMap()).take("_rev");
-      QString s(QString("http://localhost:%1/%2/%3?rev=%4").arg(this->port).arg(info.database()).arg(info.id()).arg(revision));
-      QNetworkRequest req = this->a_info.createAuthorizedRequest(s, QOAuth::DELETE);
-      QNetworkReply* reply = d->nmanager.deleteResource(req);
-      connect(reply, SIGNAL(finished()),SLOT(slotDocumentDeleteFinished()));
-  }*/
+
 }
 
 void CouchDBQt::createDocument( const QString& docname, const QString& database, const QVariant& v )
@@ -367,7 +355,7 @@ void CouchDBQt::slotDocumentDeleteProgress(const QVariant& doc)
 {
     QVariant revisionV = (doc.toMap()).take("_rev");
     QString revision = revisionV.toString();
-    QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(lastDoc.database()).arg(lastDoc.id()));
+    QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(d->lastDoc.database()).arg(d->lastDoc.id()));
     QNetworkRequest req = this->a_info.createAuthorizedRequest(s, QOAuth::DELETE);
     req.setRawHeader("If-Match",QByteArray().append(revision));
     QNetworkReply* reply = d->nmanager.deleteResource(req);
@@ -392,6 +380,9 @@ void CouchDBQt::slotDocumentDeleteFinished()
 }
 void CouchDBQt::updateDocument( const CouchDBDocumentInfo& info, const QVariant& v )
 {
+  d->lastDoc = info;
+  d->lastVariant = v;
+
   const QString str = d->serializeToJSONString( v );
   if ( str.isNull() ) {
     emit documentUpdated( false, tr("Error parsing JSON document") );
@@ -402,27 +393,40 @@ void CouchDBQt::updateDocument( const CouchDBDocumentInfo& info, const QVariant&
   req = this->a_info.createAuthorizedRequest(s, QOAuth::PUT);
   QNetworkReply* reply = d->nmanager.put(req,str.toUtf8());
   connect(reply, SIGNAL(finished()),SLOT(slotDocumentUpdateFinished()));
-
 }
 
 void CouchDBQt::slotDocumentUpdateFinished()
 {
 
-  // json level error handling looks like this:
-  // "{"error":"conflict","reason":"Document update conflict."}
-  // "{"ok":true,"id":"428004fb5c5a8db558a98f7527e2b9d10","rev":"1-967a00dff5e02add41819138abb3284d"}
   QNetworkReply* reply = ((QNetworkReply*)sender());
   const QVariantMap map = d->parseJSONString( reply->readAll() ).toMap();
   if ( map.contains("error") ) {
     const QString err = map["reason"].toString();
     qWarning() << err;
-    emit documentUpdated( false, err );
+    if ( err.contains("Document update conflict",Qt::CaseInsensitive))
+    {
+        this->disconnect(SIGNAL(documentRetrieved(const QVariant&)));
+        connect(this, SIGNAL(documentRetrieved(const QVariant&)),this,SLOT(slotDocumentUpdateProgress(const QVariant&)));
+        getDocument(d->lastDoc);
+    }
+    else emit documentUpdated( false, err );
     return;
   }
   Q_ASSERT( map.contains("ok") && map["ok"].toBool() == true );
   emit documentUpdated( true );
 }
-
+void CouchDBQt::slotDocumentUpdateProgress(const QVariant& v)
+{
+    QString json = d->serializeToJSONString(d->lastVariant);
+    QVariantMap map = v.toMap();
+    QVariant revisionV = map.value("_rev");
+    QString revision = revisionV.toString();
+    QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(d->lastDoc.database()).arg(d->lastDoc.id()));
+    QNetworkRequest req = this->a_info.createAuthorizedRequest(s, QOAuth::PUT);
+    req.setRawHeader("If-Match",QByteArray().append(revision));
+    QNetworkReply* reply = d->nmanager.put(req,json.toUtf8());
+    //connect(reply, SIGNAL(finished()),SLOT(slotDocumentUpdateFinished()));
+}
 void CouchDBQt::slotNotificationTriggered( const QString& db )
 {
   qWarning() << "Notified: " << db;

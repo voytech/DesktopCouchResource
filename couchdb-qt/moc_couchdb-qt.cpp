@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'couchdb-qt.h'
 **
-** Created: Thu Apr 15 10:48:58 2010
+** Created: Fri Apr 16 21:54:16 2010
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -55,15 +55,15 @@ static const uint qt_meta_data_CouchDBQt[] = {
      618,  468,   10,   10, 0x0a,
      660,  654,   10,   10, 0x0a,
      698,   10,   10,   10, 0x08,
-     705,   10,   10,   10, 0x08,
-     735,   10,   10,   10, 0x08,
-     765,   10,   10,   10, 0x08,
-     797,   10,   10,   10, 0x08,
-     826,   10,   10,   10, 0x08,
-     855,   10,   10,   10, 0x08,
-     886,   10,   10,   10, 0x08,
-     917,   10,   10,   10, 0x08,
-     954,  394,   10,   10, 0x08,
+     728,   10,   10,   10, 0x08,
+     758,   10,   10,   10, 0x08,
+     790,   10,   10,   10, 0x08,
+     819,   10,   10,   10, 0x08,
+     848,   10,   10,   10, 0x08,
+     879,   10,   10,   10, 0x08,
+     910,   10,   10,   10, 0x08,
+     947,  394,   10,   10, 0x08,
+     982,  197,   10,   10, 0x08,
 
        0        // eod
 };
@@ -89,7 +89,7 @@ static const char qt_meta_stringdata_CouchDBQt[] = {
     "createDocument(QString,QString,QVariant)\0"
     "deleteDocument(CouchDBDocumentInfo)\0"
     "db,on\0setNotificationsEnabled(QString,bool)\0"
-    "init()\0slotDatabaseListingFinished()\0"
+    "slotDatabaseListingFinished()\0"
     "slotDocumentListingFinished()\0"
     "slotDocumentRetrievalFinished()\0"
     "slotDocumentUpdateFinished()\0"
@@ -98,6 +98,7 @@ static const char qt_meta_stringdata_CouchDBQt[] = {
     "slotDatabaseDeletionFinished()\0"
     "slotDocumentDeleteProgress(QVariant)\0"
     "slotNotificationTriggered(QString)\0"
+    "slotDocumentUpdateProgress(QVariant)\0"
 };
 
 const QMetaObject CouchDBQt::staticMetaObject = {
@@ -150,16 +151,16 @@ int CouchDBQt::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 18: createDocument((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< const QVariant(*)>(_a[3]))); break;
         case 19: deleteDocument((*reinterpret_cast< const CouchDBDocumentInfo(*)>(_a[1]))); break;
         case 20: setNotificationsEnabled((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
-        case 21: init(); break;
-        case 22: slotDatabaseListingFinished(); break;
-        case 23: slotDocumentListingFinished(); break;
-        case 24: slotDocumentRetrievalFinished(); break;
-        case 25: slotDocumentUpdateFinished(); break;
-        case 26: slotDocumentDeleteFinished(); break;
-        case 27: slotDatabaseCreationFinished(); break;
-        case 28: slotDatabaseDeletionFinished(); break;
-        case 29: slotDocumentDeleteProgress((*reinterpret_cast< const QVariant(*)>(_a[1]))); break;
-        case 30: slotNotificationTriggered((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 21: slotDatabaseListingFinished(); break;
+        case 22: slotDocumentListingFinished(); break;
+        case 23: slotDocumentRetrievalFinished(); break;
+        case 24: slotDocumentUpdateFinished(); break;
+        case 25: slotDocumentDeleteFinished(); break;
+        case 26: slotDatabaseCreationFinished(); break;
+        case 27: slotDatabaseDeletionFinished(); break;
+        case 28: slotDocumentDeleteProgress((*reinterpret_cast< const QVariant(*)>(_a[1]))); break;
+        case 29: slotNotificationTriggered((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 30: slotDocumentUpdateProgress((*reinterpret_cast< const QVariant(*)>(_a[1]))); break;
         default: ;
         }
         _id -= 31;

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'couchdbqtchangenotifier.h'
 **
-** Created: Thu Apr 15 10:48:57 2010
+** Created: Fri Apr 16 21:54:16 2010
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.2)
 **
 ** WARNING! All changes made in this file will be lost!
