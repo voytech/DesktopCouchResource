@@ -1,5 +1,5 @@
 /*
-    Copyright [yyyy] [name of copyright owner]
+    Author: Wojciech Mąka <wojmak@gmail.com>
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -22,11 +22,14 @@
 #include <qnetworkreply.h>
 #include <QtOAuth/QtOAuth>
 
+#include "QLog.h"
 #include "couchdb-qt.h"
 #include <auth_info.h>
 #include <QtCrypto/QtCrypto>
 #include <gnome-keyring-1/gnome-keyring.h>
 #include <gnome-keyring-1/gnome-keyring-result.h>
+
+
 
 class DesktopCouchProvider
 {

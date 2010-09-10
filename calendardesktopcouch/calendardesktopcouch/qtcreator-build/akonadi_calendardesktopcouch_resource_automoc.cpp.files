@@ -1,0 +1,14 @@
+SOURCES:
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/calendardesktopcouchresource.cpp;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/incidencemapper.cpp
+MOC_COMPILE_DEFINITIONS:
+_BSD_SOURCE
+MOC_DEFINITIONS:
+ -D_BSD_SOURCE
+MOC_INCLUDES:
+/usr/include/qt4/QtDBus;/usr/include;/usr/include/KDE;/usr/include/qt4/KDE;/usr/include/qt4;/usr/include/qt4/phonon;/usr/include/qt4/QtXmlPatterns;/usr/include/qt4/QtXml;/usr/include/qt4/QtWebKit;/usr/include/qt4/QtUiTools;/usr/include/qt4/QtTest;/usr/include/qt4/QtSvg;/usr/include/qt4/QtSql;/usr/include/qt4/QtScriptTools;/usr/include/qt4/QtScript;/usr/include/qt4/QtOpenGL;/usr/include/qt4/QtNetwork;/usr/include/qt4/QtMultimedia;/usr/include/qt4/QtHelp;/usr/include/qt4/QtDesigner;/usr/include/qt4/QtAssistant;/usr/include/qt4/Qt3Support;/usr/include/qt4/QtGui;/usr/include/qt4/QtCore;/usr/include/qt4/Qt;/usr/share/qt4/mkspecs/default;/usr/include/couchdb-qt;/usr/include/QLog;/usr/include/desktop-couch-qt;/usr/include/QtCrypto;/usr/include/glib-2.0;/usr/lib/glib-2.0/include
+CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE:
+ON
+CMAKE_BINARY_DIR:
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build
+CMAKE_SOURCE_DIR:
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch

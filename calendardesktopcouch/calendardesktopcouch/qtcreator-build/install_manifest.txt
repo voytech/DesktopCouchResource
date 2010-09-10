@@ -1,0 +1,2 @@
+/usr/local/share/akonadi/agents/calendardesktopcouchresource.desktop
+/usr/local/bin/akonadi_calendardesktopcouch_resource

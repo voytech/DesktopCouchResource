@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'couchdb-qt.h'
 **
-** Created: Fri Apr 16 21:54:16 2010
+** Created: Thu Sep 9 14:27:15 2010
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_CouchDBQt[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-      31,   14, // methods
+      32,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -55,15 +55,16 @@ static const uint qt_meta_data_CouchDBQt[] = {
      618,  468,   10,   10, 0x0a,
      660,  654,   10,   10, 0x0a,
      698,   10,   10,   10, 0x08,
-     728,   10,   10,   10, 0x08,
-     758,   10,   10,   10, 0x08,
-     790,   10,   10,   10, 0x08,
-     819,   10,   10,   10, 0x08,
-     848,   10,   10,   10, 0x08,
-     879,   10,   10,   10, 0x08,
-     910,   10,   10,   10, 0x08,
-     947,  394,   10,   10, 0x08,
-     982,  197,   10,   10, 0x08,
+     754,   10,   10,   10, 0x08,
+     784,   10,   10,   10, 0x08,
+     814,   10,   10,   10, 0x08,
+     846,   10,   10,   10, 0x08,
+     875,   10,   10,   10, 0x08,
+     904,   10,   10,   10, 0x08,
+     935,   10,   10,   10, 0x08,
+     966,   10,   10,   10, 0x08,
+    1003,  394,   10,   10, 0x08,
+    1038,  197,   10,   10, 0x08,
 
        0        // eod
 };
@@ -89,6 +90,7 @@ static const char qt_meta_stringdata_CouchDBQt[] = {
     "createDocument(QString,QString,QVariant)\0"
     "deleteDocument(CouchDBDocumentInfo)\0"
     "db,on\0setNotificationsEnabled(QString,bool)\0"
+    "slotConnectionErrorOccured(QNetworkReply::NetworkError)\0"
     "slotDatabaseListingFinished()\0"
     "slotDocumentListingFinished()\0"
     "slotDocumentRetrievalFinished()\0"
@@ -151,19 +153,20 @@ int CouchDBQt::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 18: createDocument((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< const QVariant(*)>(_a[3]))); break;
         case 19: deleteDocument((*reinterpret_cast< const CouchDBDocumentInfo(*)>(_a[1]))); break;
         case 20: setNotificationsEnabled((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
-        case 21: slotDatabaseListingFinished(); break;
-        case 22: slotDocumentListingFinished(); break;
-        case 23: slotDocumentRetrievalFinished(); break;
-        case 24: slotDocumentUpdateFinished(); break;
-        case 25: slotDocumentDeleteFinished(); break;
-        case 26: slotDatabaseCreationFinished(); break;
-        case 27: slotDatabaseDeletionFinished(); break;
-        case 28: slotDocumentDeleteProgress((*reinterpret_cast< const QVariant(*)>(_a[1]))); break;
-        case 29: slotNotificationTriggered((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 30: slotDocumentUpdateProgress((*reinterpret_cast< const QVariant(*)>(_a[1]))); break;
+        case 21: slotConnectionErrorOccured((*reinterpret_cast< QNetworkReply::NetworkError(*)>(_a[1]))); break;
+        case 22: slotDatabaseListingFinished(); break;
+        case 23: slotDocumentListingFinished(); break;
+        case 24: slotDocumentRetrievalFinished(); break;
+        case 25: slotDocumentUpdateFinished(); break;
+        case 26: slotDocumentDeleteFinished(); break;
+        case 27: slotDatabaseCreationFinished(); break;
+        case 28: slotDatabaseDeletionFinished(); break;
+        case 29: slotDocumentDeleteProgress((*reinterpret_cast< const QVariant(*)>(_a[1]))); break;
+        case 30: slotNotificationTriggered((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 31: slotDocumentUpdateProgress((*reinterpret_cast< const QVariant(*)>(_a[1]))); break;
         default: ;
         }
-        _id -= 31;
+        _id -= 32;
     }
     return _id;
 }

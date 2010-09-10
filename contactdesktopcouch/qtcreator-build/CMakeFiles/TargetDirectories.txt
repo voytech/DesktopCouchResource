@@ -1,0 +1,3 @@
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/akonadi_contactdesktopcouch_resource.dir
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/akonadi_contactdesktopcouch_resource_automoc.dir
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/CMakeFiles/uninstall.dir

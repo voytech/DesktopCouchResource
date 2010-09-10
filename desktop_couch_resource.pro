@@ -7,5 +7,7 @@ TEMPLATE = subdirs
 DEFINES += DESKTOPCOUCHRESOURCE_LIBRARY
 
 SUBDIRS = couchdb-qt\
+          QLog\
           desktop-couch-qt\
           tests
+

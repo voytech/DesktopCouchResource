@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="calendardesktopcouch" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; all" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="akonadi_calendardesktopcouch_resource">
+         <Option output="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/akonadi_calendardesktopcouch_resource" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include/qt4/QtDBus" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/KDE" />
+            <Add directory="/usr/include/qt4/KDE" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/phonon" />
+            <Add directory="/usr/include/qt4/QtXmlPatterns" />
+            <Add directory="/usr/include/qt4/QtXml" />
+            <Add directory="/usr/include/qt4/QtWebKit" />
+            <Add directory="/usr/include/qt4/QtUiTools" />
+            <Add directory="/usr/include/qt4/QtTest" />
+            <Add directory="/usr/include/qt4/QtSvg" />
+            <Add directory="/usr/include/qt4/QtSql" />
+            <Add directory="/usr/include/qt4/QtScriptTools" />
+            <Add directory="/usr/include/qt4/QtScript" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/qt4/QtNetwork" />
+            <Add directory="/usr/include/qt4/QtMultimedia" />
+            <Add directory="/usr/include/qt4/QtHelp" />
+            <Add directory="/usr/include/qt4/QtDesigner" />
+            <Add directory="/usr/include/qt4/QtAssistant" />
+            <Add directory="/usr/include/qt4/Qt3Support" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/Qt" />
+            <Add directory="/usr/share/qt4/mkspecs/default" />
+            <Add directory="/usr/include/couchdb-qt" />
+            <Add directory="/usr/include/QLog" />
+            <Add directory="/usr/include/desktop-couch-qt" />
+            <Add directory="/usr/include/QtCrypto" />
+            <Add directory="/usr/include/glib-2.0" />
+            <Add directory="/usr/lib/glib-2.0/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; akonadi_calendardesktopcouch_resource" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="akonadi_calendardesktopcouch_resource/fast">
+         <Option output="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/akonadi_calendardesktopcouch_resource" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include/qt4/QtDBus" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/KDE" />
+            <Add directory="/usr/include/qt4/KDE" />
+            <Add directory="/usr/include/qt4" />
+            <Add directory="/usr/include/qt4/phonon" />
+            <Add directory="/usr/include/qt4/QtXmlPatterns" />
+            <Add directory="/usr/include/qt4/QtXml" />
+            <Add directory="/usr/include/qt4/QtWebKit" />
+            <Add directory="/usr/include/qt4/QtUiTools" />
+            <Add directory="/usr/include/qt4/QtTest" />
+            <Add directory="/usr/include/qt4/QtSvg" />
+            <Add directory="/usr/include/qt4/QtSql" />
+            <Add directory="/usr/include/qt4/QtScriptTools" />
+            <Add directory="/usr/include/qt4/QtScript" />
+            <Add directory="/usr/include/qt4/QtOpenGL" />
+            <Add directory="/usr/include/qt4/QtNetwork" />
+            <Add directory="/usr/include/qt4/QtMultimedia" />
+            <Add directory="/usr/include/qt4/QtHelp" />
+            <Add directory="/usr/include/qt4/QtDesigner" />
+            <Add directory="/usr/include/qt4/QtAssistant" />
+            <Add directory="/usr/include/qt4/Qt3Support" />
+            <Add directory="/usr/include/qt4/QtGui" />
+            <Add directory="/usr/include/qt4/QtCore" />
+            <Add directory="/usr/include/qt4/Qt" />
+            <Add directory="/usr/share/qt4/mkspecs/default" />
+            <Add directory="/usr/include/couchdb-qt" />
+            <Add directory="/usr/include/QLog" />
+            <Add directory="/usr/include/desktop-couch-qt" />
+            <Add directory="/usr/include/QtCrypto" />
+            <Add directory="/usr/include/glib-2.0" />
+            <Add directory="/usr/lib/glib-2.0/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; akonadi_calendardesktopcouch_resource/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="akonadi_calendardesktopcouch_resource_automoc">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; akonadi_calendardesktopcouch_resource_automoc" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; install" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; test" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="uninstall">
+         <Option working_dir="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; uninstall" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/calendardesktopcouchresource.cpp">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/incidencemapper.cpp">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/akonadi_calendardesktopcouch_resource_automoc.cpp">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/settings.cpp">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/settingsadaptor.cpp">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/calendardesktopcouchresource.h">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/incidencemapper.h">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/org.kde.Akonadi.calendardesktopcouch.Settings.xml.rule">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/settings.h">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/settingsadaptor.cpp.rule">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/settingsadaptor.h">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/settingsadaptor.moc">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/settingsadaptor.moc.rule">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/settings.kcfgc">
+      </Unit>
+      <Unit filename="/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

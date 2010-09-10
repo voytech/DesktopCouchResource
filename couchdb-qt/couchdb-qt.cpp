@@ -1,7 +1,7 @@
 /*
     Copyright (c) 2009 Canonical
 
-    Author: Till Adam <till@kdab.com>
+    Authors: Till Adam <till@kdab.com>, Wojciech Mąka <wojmak@gmail.com>
 
     This library is free software; you can redistribute it and/or modify it
     under the terms of the GNU Library General Public License as published by
@@ -116,11 +116,8 @@ class CouchDBQt::Private
     QVariant lastVariant;
 };
 
-
-
 QVariant CouchDBQt::Private::parseJSONString( const QByteArray& json )
 {
-
   bool ok;
   QVariant data = parser.parse ( json, &ok );
   if ( !ok ) {
@@ -128,8 +125,7 @@ QVariant CouchDBQt::Private::parseJSONString( const QByteArray& json )
     exit (1);
   }
   else {
-    qDebug() << "json object successfully converted to:";
-    //qDebug() << data;
+    qDebug() << "json object successfully converted";
   }
   return data;
 }
@@ -152,15 +148,18 @@ CouchDBDocumentInfoList CouchDBQt::Private::variantMapToDocInfoList( const QVari
     return list;
   qDebug() << rows << offset;
   QVariantList rowlist = map["rows"].toList();
-  if ( rowlist.count() != rows ) {
+  if ( rowlist.count() != rows )
+  {
     qWarning() << "Inconsistent database: " << database;
     return list;
   }
 
-  Q_FOREACH( QVariant v, rowlist ) {
+  Q_FOREACH( QVariant v, rowlist )
+  {
     QVariantMap m = v.toMap();
     const QString id = m["id"].toString();
-    if ( !id.isEmpty() ) {
+    if ( !id.isEmpty() )
+    {
       CouchDBDocumentInfo info;
       info.setDatabase( database );
       info.setId( id );
@@ -195,8 +194,7 @@ void CouchDBQt::setNotificationsEnabled( const QString& db, bool on )
   if ( on ) {
     if ( !d->notifiers.contains( db ) ) {
       CouchDBQtChangeNotifier *notifier = new CouchDBQtChangeNotifier( db );
-      connect( notifier, SIGNAL(notification(QString,QVariant)),
-               this, SLOT(slotNotificationTriggered(QString)) );
+      connect( notifier, SIGNAL(notification(QString,QVariant)),this, SLOT(slotNotificationTriggered(QString)) );
       d->notifiers.insert( db, notifier );
     }
   } else {
@@ -211,23 +209,38 @@ bool CouchDBQt::notificationsEnabled( const QString& db) const
   return d->notifiers.contains( db );
 }
 
+QNetworkRequest CouchDBQt::createRequest(const QString &url,const QOAuth::HttpMethod& method)
+{
+    QNetworkRequest req;
+    if (a_enabled)
+    {
+        req = this->a_info.createAuthorizedRequest(url,method);
+    }
+    else
+    {
+        req.setUrl(QUrl(url));
+    }
+    return req;
+}
+
 void CouchDBQt::listDatabases()
 {
    QNetworkRequest req;
    QString s(QString("http://localhost:%1/_all_dbs").arg(this->port));
-   req = this->a_info.createAuthorizedRequest(s,QOAuth::GET);
+   req = this->createRequest(s,QOAuth::GET);
    QNetworkReply* reply = d->nmanager.get(req);
    connect(reply,SIGNAL(finished()), SLOT(slotDatabaseListingFinished()));
+   connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
 }
 
 void CouchDBQt::slotDatabaseListingFinished()
 {
-  // FIXME DOS?
   QNetworkReply* reply = ((QNetworkReply*)sender());
   const QByteArray dbstring = reply->readAll();
   const QVariant dbs = d->parseJSONString( dbstring );
   QStringList dbstringlist;
-  Q_FOREACH( QVariant v, dbs.toList() ) {
+  Q_FOREACH( QVariant v, dbs.toList() )
+  {
     dbstringlist << v.toString();
   }
   emit databasesListed( dbstringlist );
@@ -235,11 +248,11 @@ void CouchDBQt::slotDatabaseListingFinished()
 
 void CouchDBQt::createDatabase( const QString& db )
 {
-  // FIXME
-   QString s(QString("http://localhost:%1/%2").arg(this->port).arg(db));
-   QNetworkRequest req = this->a_info.createAuthorizedRequest(s,QOAuth::PUT);
+   QString s(QString("http://localhost:%1/%2").arg(this->port).arg(db));   
+   QNetworkRequest req = this->createRequest(s,QOAuth::PUT);
    QNetworkReply* reply = d->nmanager.put(req,"");
    connect(reply,SIGNAL(finished()),this, SLOT(slotDatabaseCreationFinished()));
+   connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
 }
 void CouchDBQt::slotDatabaseCreationFinished()
 {
@@ -258,13 +271,14 @@ void CouchDBQt::slotDatabaseCreationFinished()
   Q_ASSERT( map.contains("ok") && map["ok"].toBool() == true );
   emit databaseCreated( true );
 }
-  // FIXME Check if it is written properly
+
 void CouchDBQt::deleteDatabase( const QString& db )
 {
     QString s(QString("http://localhost:%1/%2").arg(this->port).arg(db));
-    QNetworkRequest req = this->a_info.createAuthorizedRequest(s,QOAuth::DELETE);
+    QNetworkRequest req = this->createRequest(s,QOAuth::DELETE);
     QNetworkReply* reply = d->nmanager.deleteResource(req);
     connect(reply,SIGNAL(finished()),SLOT(slotDatabaseDeletionFinished()));
+    connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
 }
 
 void CouchDBQt::slotDatabaseDeletionFinished()
@@ -288,20 +302,22 @@ void CouchDBQt::slotDatabaseDeletionFinished()
 void CouchDBQt::listDocuments( const QString& db )
 {
   QNetworkRequest req;
-  QString s(QString("http://localhost:%1/%2/_all_docs").arg(this->port).arg(db));
-  req = this->a_info.createAuthorizedRequest(s,QOAuth::GET);
+  QString s(QString("http://localhost:%1/%2/_all_docs").arg(this->port).arg(db)); 
+  req = this->createRequest(s,QOAuth::GET);
   QNetworkReply* reply = d->nmanager.get(req);
-  connect( reply, SIGNAL( finished()) ,
-           this, SLOT( slotDocumentListingFinished() ) );
+  connect( reply, SIGNAL( finished()) ,this, SLOT( slotDocumentListingFinished() ) );
   d->database = db;
+  connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
 }
-
+//////
+//
+// Methods below doesn't have code reacting on errors
+//
+/////
 void CouchDBQt::slotDocumentListingFinished()
-{
-  // FIXME DOS?
+{  
   QNetworkReply* reply = ((QNetworkReply *)sender());
   const QByteArray docs = reply->readAll();
-  //qDebug() << docs;
   const QVariant docsAsVariant = d->parseJSONString( docs );
   const CouchDBDocumentInfoList docList = d->variantMapToDocInfoList( docsAsVariant );
   emit documentsListed( docList );
@@ -314,14 +330,15 @@ void CouchDBQt::getDocument( const CouchDBDocumentInfo & info )
   d->lastDoc = info;
   QNetworkRequest req;
   QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(info.database()).arg(info.id()));
-  req = this->a_info.createAuthorizedRequest(s,QOAuth::GET);
+  //req = this->a_info.createAuthorizedRequest(s,QOAuth::GET);
+  req = this->createRequest(s,QOAuth::GET);
   QNetworkReply* reply = d->nmanager.get(req);
   connect( reply, SIGNAL( finished() ), this, SLOT( slotDocumentRetrievalFinished() ) );
+  connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
 }
 
 void CouchDBQt::slotDocumentRetrievalFinished()
 {
-  // FIXME DOS?
   QNetworkReply* reply = ((QNetworkReply *)sender());
   const QByteArray doc = reply->readAll();
   //qDebug() << doc;
@@ -339,9 +356,11 @@ void CouchDBQt::createDocument( const QString& docname, const QString& database,
   }
   QNetworkRequest req;
   QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(database).arg(docname));
-  req = this->a_info.createAuthorizedRequest(s, QOAuth::PUT);
+  //req = this->a_info.createAuthorizedRequest(s, QOAuth::PUT);
+  req = this->createRequest(s,QOAuth::PUT);
   QNetworkReply* reply = d->nmanager.put(req,str.toUtf8());
   connect(reply, SIGNAL(finished()),SLOT(slotDocumentUpdateFinished()));
+  connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
 }
 
 //TODO implement
@@ -356,10 +375,12 @@ void CouchDBQt::slotDocumentDeleteProgress(const QVariant& doc)
     QVariant revisionV = (doc.toMap()).take("_rev");
     QString revision = revisionV.toString();
     QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(d->lastDoc.database()).arg(d->lastDoc.id()));
-    QNetworkRequest req = this->a_info.createAuthorizedRequest(s, QOAuth::DELETE);
+    //QNetworkRequest req = this->a_info.createAuthorizedRequest(s, QOAuth::DELETE);
+    QNetworkRequest req = this->createRequest(s,QOAuth::DELETE);
     req.setRawHeader("If-Match",QByteArray().append(revision));
     QNetworkReply* reply = d->nmanager.deleteResource(req);
     connect(reply, SIGNAL(finished()),SLOT(slotDocumentDeleteFinished()));
+    connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
 }
 void CouchDBQt::slotDocumentDeleteFinished()
 {
@@ -390,9 +411,11 @@ void CouchDBQt::updateDocument( const CouchDBDocumentInfo& info, const QVariant&
   }
   QNetworkRequest req;
   QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(info.database()).arg(info.id()));
-  req = this->a_info.createAuthorizedRequest(s, QOAuth::PUT);
+  //req = this->a_info.createAuthorizedRequest(s, QOAuth::PUT);
+  req = this->createRequest(s,QOAuth::PUT);
   QNetworkReply* reply = d->nmanager.put(req,str.toUtf8());
   connect(reply, SIGNAL(finished()),SLOT(slotDocumentUpdateFinished()));
+  connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
 }
 
 void CouchDBQt::slotDocumentUpdateFinished()
@@ -422,11 +445,36 @@ void CouchDBQt::slotDocumentUpdateProgress(const QVariant& v)
     QVariant revisionV = map.value("_rev");
     QString revision = revisionV.toString();
     QString s(QString("http://localhost:%1/%2/%3").arg(this->port).arg(d->lastDoc.database()).arg(d->lastDoc.id()));
-    QNetworkRequest req = this->a_info.createAuthorizedRequest(s, QOAuth::PUT);
+    //QNetworkRequest req = this->a_info.createAuthorizedRequest(s, QOAuth::PUT);
+    QNetworkRequest req = this->createRequest(s,QOAuth::PUT);
     req.setRawHeader("If-Match",QByteArray().append(revision));
     QNetworkReply* reply = d->nmanager.put(req,json.toUtf8());
+    connect(reply,SIGNAL(error(QNetworkReply::NetworkError)), SLOT(slotConnectionErrorOccured(QNetworkReply::NetworkError)));
     //connect(reply, SIGNAL(finished()),SLOT(slotDocumentUpdateFinished()));
 }
+void CouchDBQt::slotConnectionErrorOccured(QNetworkReply::NetworkError error)
+{
+    if (error == QNetworkReply::ConnectionRefusedError)
+    {
+        qDebug() << "Connection refused";
+    }
+    else
+        if (error == QNetworkReply::HostNotFoundError)
+        {
+            qDebug() << "Host Not Found";
+        }
+        else
+            if (error == QNetworkReply::ProtocolFailure)
+            {
+                qDebug() << "Protocol failure";
+            }
+            else
+                if (error == QNetworkReply::RemoteHostClosedError)
+                {
+                    qDebug() << "Remote Host closed";
+                }
+}
+
 void CouchDBQt::slotNotificationTriggered( const QString& db )
 {
   qWarning() << "Notified: " << db;

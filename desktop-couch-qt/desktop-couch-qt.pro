@@ -15,6 +15,10 @@ DEFINES += DESKTOPCOUCHDBQT_LIBRARY
 #LIBS += /usr/lib/libqoauth.so
 LIBS += /usr/lib/libgnome-keyring.so
 LIBS += ../libs/libcouchdb-qt.so
+# new !!!
+LIBS += ../libs/libQLog.so
+INCLUDEPATH += ../QLog
+# new !!!
 INCLUDEPATH += ../couchdb-qt
 INCLUDEPATH += /usr/include/glib-2.0 /usr/lib/glib-2.0/include
 INCLUDEPATH += /usr/include/gnome-keyring-1

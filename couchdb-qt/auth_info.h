@@ -40,7 +40,7 @@ public:
   void setAuthorizationMode(AuthMode);
   AuthMode authorizationMode(void);
   QMap<QString,QString> authData(void);
-  virtual  QNetworkRequest createAuthorizedRequest(QString& url, QOAuth::HttpMethod method);
+  virtual  QNetworkRequest createAuthorizedRequest(const QString& url, const QOAuth::HttpMethod& method);
 
 private:
   QMap<QString,QString> aData;   

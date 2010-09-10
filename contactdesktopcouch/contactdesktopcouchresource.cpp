@@ -25,9 +25,9 @@ using namespace Akonadi;
 ContactDesktopCouchResource::ContactDesktopCouchResource( const QString &id )
     : ResourceBase( id )
 {
-  setName( i18n("Desktop Couch Address Book") );
-  new SettingsAdaptor( Settings::self() );
-  QDBusConnection::sessionBus().registerObject( QLatin1String( "/Settings" ),
+   setName( i18n("Desktop Couch Address Book") );
+   new SettingsAdaptor( Settings::self() );
+   QDBusConnection::sessionBus().registerObject( QLatin1String( "/Settings" ),
                             Settings::self(), QDBusConnection::ExportAdaptors );
 
   //setSupportedMimetypes( QStringList() << KABC::Addressee::mimeType(), "office-address-book" )
@@ -47,7 +47,6 @@ ContactDesktopCouchResource::ContactDesktopCouchResource( const QString &id )
     initDataBase();
     changeRecorder()->itemFetchScope().fetchFullPayload();
     synchronizeCollectionTree();
-
   // TODO: you can put any resource specific initialization code here.
 }
 
@@ -108,6 +107,8 @@ void ContactDesktopCouchResource::configure( WId windowId )
 {
     Q_UNUSED( windowId );
     QString name = KInputDialog::getText("Enter Data Base Name","Data Base","pim");
+    //QString name = KInputDialog::getText("Enter Log file path","Logs","/home");
+    //QString name = KInputDialog::getText("Enter Data Base Name","Data Base","pim");
     dbName = name;
     initDataBase();
     synchronize();

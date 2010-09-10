@@ -1,4 +1,6 @@
 /*
+   Author: Wojciech Mąka <wojmak@gmail.com>
+
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
    License version 2 as published by the Free Software Foundation.
@@ -47,7 +49,7 @@ QMap<QString,QString> AuthInfo::authData(void)
    return aData;
 }
 // 
-QNetworkRequest AuthInfo::createAuthorizedRequest(QString& url,QOAuth::HttpMethod method)
+QNetworkRequest AuthInfo::createAuthorizedRequest(const  QString& url,const QOAuth::HttpMethod& method)
 {
    QNetworkRequest req;
    if (a_mode==AuthInfo::OAUTH)

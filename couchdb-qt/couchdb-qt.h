@@ -1,7 +1,7 @@
 /*
     Copyright (c) 2009 Canonical
 
-    Author: Till Adam <till@kdab.com>
+    Author: Till Adam <till@kdab.com>, Wojciech Mąka <wojmak@gmail.com>
 
     This library is free software; you can redistribute it and/or modify it
     under the terms of the GNU Library General Public License as published by
@@ -56,7 +56,7 @@ class CouchDBQt : public QObject
   Q_OBJECT
 public:
     CouchDBQt(int);
-    virtual ~CouchDBQt();
+    ~CouchDBQt();
     bool notificationsEnabled( const QString& db ) const;
                        // for connections that needs authentication.    
     void enableAuthentication(bool enable);
@@ -85,6 +85,7 @@ signals:
     void documentRemoved(bool ok, const QString& error = QString());
     void changeNotification( const QString& db, const QVariant& change );
 private slots:
+    void slotConnectionErrorOccured(QNetworkReply::NetworkError);
     void slotDatabaseListingFinished();
     void slotDocumentListingFinished();
     void slotDocumentRetrievalFinished();
@@ -97,7 +98,7 @@ private slots:
     void slotDocumentUpdateProgress( const QVariant& v );
 private:
     //const QString& signHeager(const QString& header);
-     
+    QNetworkRequest createRequest(const QString& url, const QOAuth::HttpMethod& method);
     class Private;
     Private * const d;
     AuthInfo a_info;

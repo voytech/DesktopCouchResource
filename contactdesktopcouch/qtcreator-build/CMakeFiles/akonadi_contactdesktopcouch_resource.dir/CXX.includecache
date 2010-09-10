@@ -19,6 +19,8 @@ couchdb-qt.h
 -
 desktop_couch.h
 -
+mapper.h
+../mapper.h
 
 /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/contactdesktopcouchresource.cpp
 contactdesktopcouchresource.h
@@ -40,6 +42,8 @@ kfiledialog.h
 klocale.h
 -
 KWindowSystem
+-
+kinputdialog.h
 -
 QtDBus/QDBusConnection
 -
@@ -63,8 +67,6 @@ couchdb-qt.h
 -
 desktop_couch.h
 -
-
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.cpp
 mapper.h
 /media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/mapper.h
 
@@ -77,56 +79,8 @@ desktop_couch.h
 -
 kabc/phonenumber.h
 -
-
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/akonadi_contactdesktopcouch_resource_automoc.cpp
-
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.cpp
-settings.h
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
-klocale.h
+kabc/secrecy.h
 -
-kglobal.h
--
-QtCore/QFile
--
-
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
-kconfigskeleton.h
--
-kdebug.h
--
-
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.cpp
-settingsadaptor.h
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
-QtCore/QMetaObject
--
-QtCore/QByteArray
--
-QtCore/QList
--
-QtCore/QMap
--
-QtCore/QString
--
-QtCore/QStringList
--
-QtCore/QVariant
--
-settingsadaptor.moc
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.moc
-
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
-QtCore/QObject
--
-QtDBus/QtDBus
--
-settings.h
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settings.h
-
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.moc
-settingsadaptor.h
-/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/contactdesktopcouch/qtcreator-build/settingsadaptor.h
 
 /usr/include/KDE/../kwindowsystem.h
 kdeui_export.h
@@ -214,10 +168,6 @@ iterator
 list
 -
 
-/usr/include/qt4/QtCore/QByteArray
-qbytearray.h
-/usr/include/qt4/QtCore/qbytearray.h
-
 /usr/include/qt4/QtCore/QDate
 qdatetime.h
 /usr/include/qt4/QtCore/qdatetime.h
@@ -226,25 +176,9 @@ qdatetime.h
 qdebug.h
 /usr/include/qt4/QtCore/qdebug.h
 
-/usr/include/qt4/QtCore/QFile
-qfile.h
-/usr/include/qt4/QtCore/qfile.h
-
 /usr/include/qt4/QtCore/QIODevice
 qiodevice.h
 /usr/include/qt4/QtCore/qiodevice.h
-
-/usr/include/qt4/QtCore/QList
-qlist.h
-/usr/include/qt4/QtCore/qlist.h
-
-/usr/include/qt4/QtCore/QMap
-qmap.h
-/usr/include/qt4/QtCore/qmap.h
-
-/usr/include/qt4/QtCore/QMetaObject
-qobjectdefs.h
-/usr/include/qt4/QtCore/qobjectdefs.h
 
 /usr/include/qt4/QtCore/QObject
 qobject.h
@@ -265,10 +199,6 @@ qshareddata.h
 /usr/include/qt4/QtCore/QString
 qstring.h
 /usr/include/qt4/QtCore/qstring.h
-
-/usr/include/qt4/QtCore/QStringList
-qstringlist.h
-/usr/include/qt4/QtCore/qstringlist.h
 
 /usr/include/qt4/QtCore/QUrl
 qurl.h

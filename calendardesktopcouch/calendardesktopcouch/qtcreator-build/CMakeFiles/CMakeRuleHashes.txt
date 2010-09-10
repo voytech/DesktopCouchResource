@@ -1,0 +1,7 @@
+# Hashes of file build rules.
+eaa8178d1aa5324092636a933f25c32b CMakeFiles/akonadi_calendardesktopcouch_resource_automoc
+cf6b43ee474ac106062ac2dc62ec596d CMakeFiles/uninstall
+5f5fdf230d6d132263fa79bae201cb54 org.kde.Akonadi.calendardesktopcouch.Settings.xml
+80129efb0c2f011d0494bfe4cdeb2594 settings.h
+00d9fc8a1c87ab2d749a3676165e406f settingsadaptor.cpp
+cb77ace4f1d7a752185a554994ecfe90 settingsadaptor.moc

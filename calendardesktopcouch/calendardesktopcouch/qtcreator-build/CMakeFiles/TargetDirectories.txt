@@ -1,0 +1,3 @@
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/CMakeFiles/akonadi_calendardesktopcouch_resource.dir
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/CMakeFiles/akonadi_calendardesktopcouch_resource_automoc.dir
+/media/storage/PROGRAMMING/MasterThesis/GitRepo/DesktopCouchResource/calendardesktopcouch/calendardesktopcouch/qtcreator-build/CMakeFiles/uninstall.dir

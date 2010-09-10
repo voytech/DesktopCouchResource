@@ -1,5 +1,5 @@
 /*
-    Copyright [yyyy] [name of copyright owner]
+    Author: Wojciech Mąka <wojmak@gmail.com>
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -19,9 +19,9 @@
 #include <Qt/QtDBus>
 #include <QtOAuth/QtOAuth>
 
-DesktopCouchProvider::DesktopCouchProvider(void )
+DesktopCouchProvider::DesktopCouchProvider(void ) : db(NULL)
 {
-   db = NULL;
+   QLog::getLogger()->setOutput("/home/voytech/Logs.txt");
 }
 DesktopCouchProvider::~DesktopCouchProvider(void )
 {
@@ -43,6 +43,9 @@ CouchDBQt* DesktopCouchProvider::getWrappedCouchDB()
 */
 void DesktopCouchProvider::runDesktopCouch()
 {
+    QLog::getLogger()->log("-----------------------",QLog::INFO);
+    QLog::getLogger()->log("Running DesktopCouch...",QLog::INFO);
+
    if (db!=NULL) delete db;
    QDBusInterface iface(QString("org.desktopcouch.CouchDB"),QString("/"),QString(""),QDBusConnection::sessionBus());
    if (iface.isValid())
@@ -53,7 +56,8 @@ void DesktopCouchProvider::runDesktopCouch()
       {
 	 if (reply.value()>0)
 	 {
-	    db = new CouchDBQt(reply.value());	    	   
+            // creating CouchDBQt instance for managinf underlaying CouchDB instance.
+	    db = new CouchDBQt(reply.value());
 	 }
       }
    }
@@ -61,9 +65,10 @@ void DesktopCouchProvider::runDesktopCouch()
 /*
   This should be replaced by more convenient method of accessing gnome-keyring..
   We have very unnecessery dependecies with gnome devs here.
-  */
+ */
 const QStringList DesktopCouchProvider::getOAuthCredentials(void)
 {
+    QLog::getLogger()->log("Retrieving credentials...",QLog::INFO);
     //QStringList* creds = NULL;
     g_set_application_name("desktop-couch-qt");
     GnomeKeyringAttributeList* attributes;
@@ -78,32 +83,37 @@ const QStringList DesktopCouchProvider::getOAuthCredentials(void)
     char* item;
     if (result == GNOME_KEYRING_RESULT_OK )
     {
-        for (i = found_list; i != NULL; i = i->next)
+        for ( i = found_list; i != NULL; i = i->next )
         {
             found = (GnomeKeyringFound*)i->data;
             item = g_strdup(found->secret);
             QString i(item);
             QStringList lcreds = i.split(":");
-            //creds = &lcreds;
             return lcreds;
         }
     }
+    QLog::getLogger()->log("Retrieving credentials failed...\n(check if Gnome-Keyring-Daemon is running)",QLog::ERROR);
     return QStringList();
 }
 void DesktopCouchProvider::authenticate()
 {
    getWrappedCouchDB();
    QStringList credentials =  getOAuthCredentials();
+   QLog::getLogger()->log("Applying credentials...",QLog::INFO);
    if (db!=NULL)
    {
-     QMap<QString,QString> map;
-     //This is wrong approach we should hardly specify interface.
-     map.insert("ConsumerKey",credentials.at(0));
-     map.insert("ConsumerSecret",credentials.at(1));
-     map.insert("Token",credentials.at(2));
-     map.insert("TokenSecret",credentials.at(3));
-     AuthInfo info(AuthInfo::OAUTH,map);
-     db->enableAuthentication(true);
-     db->setAuthenticationInfo(info);    
+     if (!credentials.size() == 0)
+     {
+        QMap<QString,QString> map;
+        //This is wrong approach we should hardly specify interface.
+         map.insert("ConsumerKey",credentials.at(0));
+         map.insert("ConsumerSecret",credentials.at(1));
+         map.insert("Token",credentials.at(2));
+         map.insert("TokenSecret",credentials.at(3));
+         AuthInfo info(AuthInfo::OAUTH,map);
+         db->enableAuthentication(true);
+         db->setAuthenticationInfo(info);
+     }
+     else QLog::getLogger()->log("Empty credentials list...",QLog::ERROR);
    }  
 }
